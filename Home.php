@@ -6,11 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
@@ -18,40 +15,18 @@
 
 <body class="dark">
     <main class="d-flex justify-content-center ">
-        <div class="container-fluid col-12 col-md-11 mt90">
+        <div class="container-fluid col-md-11  mt90" style="width:90%;">
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-5 col-sm-8 col-11 mb-5">
-                    <div class="img-content">
-                        <img src="./images/home_01/1.jpg">
-                        <div class="info-skills  p-4">
-                            <div class="bars d-flex flex-column">
-                                <span>Front End : 70%</span>
-                                <span>Back End : 80%</span>
-                                <span>Ux Design : 85%</span>
-                            </div>
-                            <div class="d-flex btns-info mt-3">
-                                <button class="btn border-1"><a href="#" class="text-white">D</a></button>
-                                <button class="btn border-1"><a href="#" class="text-white">Hire me</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <!-- profile card -->
+                <?php include 'includes/profilecolumn.php'; ?>
                 <!-- content -->
-                <div class="col-lg-8  col-md-7">
-                    <nav class=" p-4 ">
-                        <ul class="list-unstyled d-flex justify-content-around">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Resume</a></li>
-                            <li><a href="">Portfolio</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </nav>
-
+                <div class="col-lg-8 col-md-7">
+                    <!-- navbar -->
+                <?php include 'includes/navbar.php'; ?>
                     <div class="container-fluid content-mod">
                         <div class="row ">
-                            <div class="pd-content">
+                            <div class="pd-content div_rel">
+                                <img src="./images/bg/6.png" class="img_info">
                                 <div class="title">
                                     <h4>About Info</h4>
                                 </div>
@@ -68,7 +43,7 @@
                                         <div class="box">
                                             <i class="bi bi-envelope-check"></i>
                                             <span>Email</span>
-                                            <p>AbdessalamElboukri1@gail.com</p>
+                                            <p style="word-wrap:wrap;">AbdessalamElboukri1@gmail.com</p>
                                         </div>
                                     </div>
                                     <!--  -->
@@ -103,22 +78,20 @@
                                 <div class="title">
                                     <h4>Short bio</h4>
                                 </div>
-                                <div class="row mt-3 short-bio">
-                                    <div class="col-sm-12 fs-6">
-                                        <p>
+                                <div class="mt-3 short-bio">
+                                    <div class="row small">
+                                        <p class="col-lg-6">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
                                             consectetur incidunt quod repellendus ipsam aut eligendi corporis, vel
                                             aliquam mollitia laborum odio cupiditate molestiae quaerat, dolore natus
                                         </p>
-                                        <p> 
-                                            sapiente sit molestias!
-                                            Ab quisquam fugiat dolores vero nobis perspiciatis quibusdam voluptate
-                                        </p>
-                                        <p>
+                                        
+                                        <p class="col-lg-6">
                                             omnis repellat iste illo dolore, eligendi provident commodi id placeat
                                             laborum totam incidunt laboriosam quaerat autem
+                                            <img src="./images/home_01/signature.png" width="70%" >
                                         </p>
-                                        <img src="./images/home_01/30.png" width="50%">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -186,17 +159,17 @@
                                                 <h4>I Love</h4>
                                             </div>
                                             <div class="d-flex flex-column">
-                                                <div class="interes_div mb-4">
-                                                    <i></i>
-                                                    <span class="text-white">CyberSecurity</span>
+                                                <div class="interes_div mb-4 box d-flex align-items-center">
+                                                    <i class="bi bi-boxes"></i>
+                                                    <span class="text-white ">CyberSecurity</span>
                                                 </div>
-                                                <div class="interes_div mb-4">
-                                                    <i></i>
+                                                <div class="interes_div mb-4 box d-flex align-items-center">
+                                                    <i class="bi bi-controller"></i>
                                                     <span class="text-white">Vedio Games</span>
                                                 </div>
-                                                <div class="interes_div mb-4">
-                                                    <i></i>
-                                                    <span class="text-white">Game Developement</span>
+                                                <div class="interes_div mb-4 box d-flex align-items-center">
+                                                    <i class="bi bi-joystick"></i>
+                                                    <span class="text-white ">Game Developement</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -228,14 +201,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+                                <?php  include 'includes/footer.php' ?>
 </body>
 </html>

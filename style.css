@@ -5,12 +5,12 @@
     font-family: 'Fira Sans', sans-serif;
 }
 :root{
-    --green: #01d85f;
+    --green1: #12b357;
     --white:#ffff;
-    --gray : #808080;
+    --gray1 : #808080;
     --darken:#201e29;
     --cardcolor : #292633; 
-    --purple : #7635f5;;
+    --purple1 : #8706ff;
 }
 
 
@@ -21,9 +21,8 @@
 .pd-content{
     padding: 30px 17px;
 }
-
-
 /* ===================================================*/
+
 ul{
     margin: 0 !important;
 }
@@ -33,6 +32,21 @@ a{
 
 html{
     scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background:linear-gradient(to bottom, var(--darken), rgb(86, 32, 122));
+}
+body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #808080;
 }
 .dark{
     background: url(images/bg/1.png) no-repeat fixed top center #34313f;
@@ -56,19 +70,46 @@ nav{
 }
 nav ul li{
     display: inline-block;
+    width: 60px;
     position: relative;
+    text-align: center;
 }
 
 nav ul li a{
-    font-weight: 500;
+    font-weight: 600;
     color: var(--white);
 }
+nav ul li i{
+    position: absolute;
+    top: -17px;
+    left: 10px;
+    color: var(--purple1);
+    opacity: 0.3;
+    font-size: 40px;
+}
 nav ul li a:hover{
-    color: var(--green);
-    transition: color .2s ease-in;
+    color: var(--green1);
+    transition: color .3s ease-in-out;
+}
+nav ul li a:hover i{
+    color: var(--green1);
+    transition: color .3s ease-in-out;
 }
 .title{
-    color: var(--green);
+    color: var(--green1);
+    margin-bottom: 15px;
+}
+.title h4{
+    position: relative;
+    font-size: 19px;
+    font-weight: 700;
+}
+.title h4::after{
+    content: url(./images/bg/2.png);
+    position: absolute;
+    width: 16px;
+    top: 11px;
+    left: 0;
 }
 .content-mod{
     background: #201e29;
@@ -79,8 +120,8 @@ nav ul li a:hover{
     color: var(--white);
 }
 .box p, .short-bio p{
-    color: var(--gray);
-    font-size: 15px;
+    color: var(--gray1);
+    font-size: 14px;
 }
 .bars span{
     font-size: 16px;
@@ -91,17 +132,18 @@ nav ul li a:hover{
 }
 .btns-info button:nth-child(1){
 
-    background-color: var(--green);
+    background-color: var(--green1);
     border: none;
-    padding: 10px 19px;
-    border-radius: 3px 0 0 3px;
+    padding: 12px 19px;
+    border-radius: 2px 0 0 2px;
 }
 .btns-info button:nth-child(2){
-    background-color: var(--purple);
+    background-color: var(--purple1);
     border: none;
-    padding: 10px 40px;
-    border-radius: 0 3px 3px 0;
+    padding: 12px 45px;
+    border-radius: 0 2px 2px 0;
     margin-left: 5px;
+    font-size: 14px;
 }
 
 .carde{
@@ -114,11 +156,11 @@ nav ul li a:hover{
     -webkit-transition: all ease 300ms;
 }
 .carde span{
-    color: var(--green);
+    color: var(--green1);
     font-size: 13px;
 }
 .carde h3{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 200;
     color: var(--white);
 }
@@ -132,10 +174,19 @@ nav ul li a:hover{
 }
 .carde:hover{
     border-radius: 2px 2px 10px 10px;
-    border-bottom-color: #7635f5;
+    border-bottom-color: var(--purple1);
     box-shadow: -3px 2px 21px 4px rgb(32 30 41);
 }
-
+.img_info{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    right: 0;
+    top: 20%;
+}
+.div_rel{
+    position: relative;
+}
 
 
 .languageDiv{
@@ -170,7 +221,7 @@ nav ul li a:hover{
 }
 .ldInner span:after{
     content: '';
-    background: #7635f5;
+    background: var(--purple1);
     border-radius: 50%;
     position: absolute;
     left: 0;
@@ -232,22 +283,25 @@ nav ul li a:hover{
 }
 .ldInner i{
     font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     line-height: inherit;
     letter-spacing: 0px;
     margin-left: 5px;
-    color: #7635f5;
+    color: var(--purple1);
 }
-@media (max-width:448px) {
+@media (max-width:450px) {
     .ldInner{
         display:block;
     }
     .ldInner i{
-        margin-left: 20px;
+        margin-left: 7px;
     }
     .ldInner h5{
         margin-bottom: 8px;
+    }
+    .ldInner span{
+        margin-right: 20px !important;
     }
 }
 
@@ -257,7 +311,7 @@ nav ul li a:hover{
     padding-left: 69px;
     padding-top: 5px;
     min-height: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
 }
 
 .box i {
@@ -266,7 +320,7 @@ nav ul li a:hover{
     top: 0;
     width: 50px;
     height: 50px;
-    background: var(--purple);
+    background: var(--purple1);
     color: #FFF;
     border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
     font-size: 18px;
@@ -277,16 +331,15 @@ nav ul li a:hover{
     -webkit-transition: all ease 300ms;
 }
 .box i:hover{
-    background: var(--green);
+    background: var(--green1);
     border-radius: 31% 70% 70% 31% / 31% 31% 70% 70%;
 }
-
 .i_div{
     position: relative;
     width: 60px;
     height: 60px;
     background: var(--darken);
-    color: #FFF;
+    color: var(--purple1);
     border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
     font-size: 18px;
     line-height: 1;
@@ -300,7 +353,158 @@ nav ul li a:hover{
     font-size: 20px;
 }
 .carde:hover .i_div{
-    background: var(--purple);
+    background: var(--purple1);
     border-radius: 31% 70% 70% 31% / 31% 31% 70% 70%;
 }
-.carde:hover
+.carde:hover .i_div i{
+    color: var(--white);
+}
+.interes_div span{
+    font-size: 16px;
+    font-weight: 300;
+}
+.interes_div i{
+    font-size: 21px;
+    margin-right: 18px;
+}
+.copyright p{
+    color: var(--gray1);
+    font-size: 11px;
+    margin-top: 14px;
+}
+.copyright p span{
+    color: var(--purple1);
+    margin-left: 5px;
+}
+
+/* ====================PORTFOLIO==================== */
+.folio_effect {
+    perspective: none;
+    margin-bottom: 35px;
+}
+.folio_item {
+    position: relative;
+    display: block;
+    flex: none;
+    width: 100%;
+    margin: 0;
+    cursor: default;
+    transform-style: preserve-3d;
+}
+.folio_stack {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transform-style: preserve-3d;
+}
+.folio_decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transform-origin: 50% 100%;
+}
+.folio_img_holder {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-origin: 50% 100%;
+}
+.folio_img {
+    position: relative;
+    display: block;
+    flex: none;
+}
+.folio_img img{
+    width: 100%;
+}
+.folio_content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 19px;
+}
+.folio_title {
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    display: block;
+    line-height: 26px;
+    text-transform: capitalize;
+    width: 100%;
+    margin: 0 0 5px;
+}
+.folio_title a{
+    color: #FFF;
+}
+.folio_title a:hover{
+    color: var(--green1);
+}
+.folio_cat{
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+}
+.folio_cat span{
+    color: #808080;
+}
+.folio_cat span:hover{
+    color: var(--purple1);
+}
+.folio_item a:hover .folio_decoration{
+    background-color: var(--green1);
+    transition: all 300ms ease-in-out  ;
+}
+.folio_item a:hover .folio_decoration:nth-child(1){
+    opacity:0.2;
+    transform: translateY(4px) rotate(-3deg) scale(1.05) ;
+}
+.folio_item a:hover .folio_decoration:nth-child(2){
+    opacity:0.6;
+    transform: translateY(6px) rotate(-4deg) scale(1.02) ;
+}
+.folio_item a:hover .folio_decoration:nth-child(3){
+    opacity:0.4;
+    transform: translateY(4px) rotate(3deg) scale(1.05) ;
+}
+.folio_item a:hover .folio_decoration:nth-child(4){
+    opacity:0.8;
+    transform: translateY(6px) rotate(4deg) scale(1.02) ;
+}
+.folio_item a:hover img{
+    transition: transform 300ms ease-in-out;
+    transform: scale(0.93)
+}
+
+.project-notif >div{
+    background-color: var(--green1);
+    border-radius: 3px;
+}
+
+
+/* =====================singlefolio===================== */
+.proj_nav{
+    padding: 0 !important;
+    padding: 0 3px;
+}
+.proj_nav a{
+    font-size: 13px;
+}
+.proj_nav >div{
+    background-color: var(--cardcolor);
+    border-radius: 3px;
+}
+.navig1{
+    border-right: 3px solid var(--darken);
+}
+.navig2{
+    border-left: 3px solid var(--darken);
+}
