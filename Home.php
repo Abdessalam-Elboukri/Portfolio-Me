@@ -15,19 +15,19 @@
 
 <body class="dark">
     <main class="d-flex justify-content-center ">
-        <div class="container-fluid col-md-11  mt90" style="width:90%;">
+        <div class="container-fluid col-md-11  mt90" >
             <div class="row justify-content-center">
                 <!-- profile card -->
                 <?php include 'includes/profilecolumn.php'; ?>
                 <!-- content -->
-                <div class="col-lg-8 col-md-7">
+                <div class="col-lg-8 col-md-7 rounded-3" >
                     <!-- navbar -->
                 <?php include 'includes/navbar.php'; ?>
-                    <div class="container-fluid content-mod">
+                    <div class="container-fluid content-mod ">
                         <div class="row ">
                             <div class="pd-content div_rel">
                                 <img src="./images/bg/6.png" class="img_info">
-                                <div class="title">
+                                <div class="title pb-3">
                                     <h4>About Info</h4>
                                 </div>
                                 <div class="row mt-3">
@@ -43,7 +43,7 @@
                                         <div class="box">
                                             <i class="bi bi-envelope-check"></i>
                                             <span>Email</span>
-                                            <p style="word-wrap:wrap;">AbdessalamElboukri1@gmail.com</p>
+                                            <p style="word-wrap:wrap;">AbdessalamElboukri1 @gmail.com</p>
                                         </div>
                                     </div>
                                     <!--  -->
@@ -72,7 +72,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <!--  -->
                             <div class="pd-content content-column">
                                 <div class="title">
@@ -84,8 +83,7 @@
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
                                             consectetur incidunt quod repellendus ipsam aut eligendi corporis, vel
                                             aliquam mollitia laborum odio cupiditate molestiae quaerat, dolore natus
-                                        </p>
-                                        
+                                        </p>                                       
                                         <p class="col-lg-6">
                                             omnis repellat iste illo dolore, eligendi provident commodi id placeat
                                             laborum totam incidunt laboriosam quaerat autem
@@ -155,7 +153,7 @@
                                 <div class="row">
                                     <div class="col-lg-5 mb-1">
                                         <div>
-                                            <div class="title">
+                                            <div class="title mb-3">
                                                 <h4>I Love</h4>
                                             </div>
                                             <div class="d-flex flex-column">
@@ -177,7 +175,7 @@
                                     <!--  -->
                                     <div class="col-lg-7">
                                         <div class="languageDiv">
-                                            <div class="title">
+                                            <div class="title mb-md-5">
                                                 <h4>Langues</h4>
                                             </div>
                                             <div class="mt-3">

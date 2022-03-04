@@ -1,4 +1,5 @@
 <?php
+
     include 'sql/config.php';
 
     $id=$_GET['id'];
@@ -13,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Explore Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -37,17 +38,18 @@
                                 <div class="col-12" >
                                     <img src="./images/folio/15.jpg" width="100%">
                                 </div>
-                                <div class="container row mt-2 justify-content-center">
-                                    <div class="col-6 shadow proj_nav navig1">
-                                        <div class="text-center p-3 ">
-                                            <a href="<?php echo $result['github_link']; ?>"  class="text-white fw-300">Github</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 shadow proj_nav navig2">
-                                        <div class="text-center p-3 ">
-                                            <a href="<?php echo $result['website_link']; ?>" class="text-white fw-300" >Website</a>
-                                        </div>
-                                    </div>
+                                <div class="container-fluid row mt-2 justify-content-center">
+                                    <a href="<?php echo $result['github_link']; ?>"
+                                        class="col-6 shadow proj_nav text-center navig1 p-3 text-white fw-300">
+                                        <div class="sing_folio_anim"><img src="images/folio/11.png"></div>
+                                        Github
+                                    </a>
+
+                                    <a href="<?php echo $result['website_link']; ?>"
+                                        class="col-6 shadow proj_nav text-center navig2 p-3 text-white fw-300" >
+                                        <div class="sing_folio_anim"><img src="images/folio/11.png"></div>
+                                        Website
+                                    </a>
                                 </div>
                             </div>
                             <!--  -->
@@ -55,57 +57,55 @@
                                 <div class="title">
                                     <h4>About the project</h4>
                                 </div>
-                                <div class="mt-3 short-bio">
+                                <div class="mt-3  short-bio">
                                     <div class="row small">
-                                        <p class="col-12">
+                                        <span class="col-12">
                                             <?php 
                                                 echo $result['description'];
                                             ?>
-                                        </p>                                       
-                                    <div class=" col-lg-6 col-12">
-                                        <div class="box">
-                                            <i class="bi bi-envelope-check"></i>
-                                            <span>Client</span>
-                                            <p><?php 
-                                                echo $result['client'];
-                                            ?></p>
+                                        </span>                                      
+                                        <div class=" col-lg-6 col-12">
+                                            <div class="box">
+                                                <i class="bi bi-person-check"></i>
+                                                <span>Client</span>
+                                                <p><?php 
+                                                    echo $result['client'];
+                                                ?></p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class=" col-lg-6 col-12">
-                                        <div class="box">
-                                            <i class="bi bi-calendar2-date-fill"></i>
-                                            <span>Date</span>
-                                            <p><?php 
-                                                echo $result['date'];
-                                            ?></p>
+                                        <!--  -->
+                                        <div class=" col-lg-6 col-12">
+                                            <div class="box">
+                                                <i class="bi bi-calendar-check"></i>
+                                                <span>Date</span>
+                                                <p><?php 
+                                                    echo $result['date'];
+                                                ?></p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class=" col-lg-6 col-12">
-                                        <div class="box">
-                                            <i class="bi bi-calendar2-date-fill"></i>
-                                            <span>Tools</span>
-                                            <p><?php 
-                                                echo $result['tools_used'];
-                                            ?></p>
+                                        <!--  -->
+                                        <div class=" col-lg-6 col-12">
+                                            <div class="box">
+                                                <i class="bi bi-tools"></i>
+                                                <span>Tools</span>
+                                                <p><?php 
+                                                    echo $result['tools_used'];
+                                                ?></p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class=" col-lg-6 col-12">
-                                        <div class="box">
-                                            <i class="bi bi-calendar2-date-fill"></i>
-                                            <span>Language</span>
-                                            <p><?php 
-                                                echo $result['lang_used'];
-                                            ?></p>
+                                        <!--  -->
+                                        <div class=" col-lg-6 col-12">
+                                            <div class="box">
+                                                <i class="bi bi-terminal"></i>
+                                                <span>Language</span>
+                                                <p><?php 
+                                                    echo $result['lang_used'];
+                                                ?></p>
+                                            </div>
                                         </div>
-                                    </div>
-                                        
-                                    </div>
+                                    </div>   
                                 </div>
-                            </div>
-                                    
+                            </div>                                   
                         <!--  -->
                         <?php  include 'includes/footer.php' ?>
 </body>

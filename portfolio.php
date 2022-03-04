@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -51,7 +51,7 @@
                                                 </div>
                                             </a>
                                             <div class="folio_content">
-                                                <h3 class="folio_title"><a href="singlefolio.php?id=<?php echo $result['id']; ?>"><?php echo $result['title']; ?></a></h3>
+                                                <h3 class="folio_title fw-300"><a href="singlefolio.php?id=<?php echo $result['id']; ?>"><?php echo $result['title']; ?></a></h3>
                                                 <p class="folio_cat"><span><?php echo $result['category']; ?></span></p>
                                             </div>                   
                                         </div>
@@ -62,7 +62,8 @@
                                 <!--  -->
                                 </div>                          
                             <div class="col-12 project-notif mt-2 mb-3 d-flex justify-content-center">
-                                <div class=" col-md-4 p-2 shadow text-center">
+                                <div class=" col-md-4  text-center">
+                                    <div class="animation_prj"></div>
                                     <span class="text-white small fw-500"> More Projects are Soon</span>
                                 </div>                                
                             </div>
