@@ -5,6 +5,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" type="x-icon" href="images/author/logopng.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,7 +47,7 @@
                                                     <div class="folio_decoration"></div>
                                                     <div class="folio_decoration"></div>
                                                     <div class="folio_img_holder">
-                                                        <img class="folio_img" src="./images/folio/12.jpg" alt="Image">
+                                                        <img class="folio_img" src="<?php echo 'images/folio/' .$result['image']; ?>" alt="Image" width="90%">
                                                     </div>
                                                 </div>
                                             </a>

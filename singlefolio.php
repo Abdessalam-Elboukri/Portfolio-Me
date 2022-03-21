@@ -11,6 +11,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" type="x-icon" href="images/author/logopng.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,19 +37,31 @@
                         <div class="pt-2">
                             <div class="row justify-content-center">
                                 <div class="col-12" >
-                                    <img src="./images/folio/15.jpg" width="100%">
+                                    <img src="./images/folio/eclass-course.jpeg" width="100%">
                                 </div>
                                 <div class="container-fluid row mt-2 justify-content-center">
-                                    <a href="<?php echo $result['github_link']; ?>"
-                                        class="col-6 shadow proj_nav text-center navig1 p-3 text-white fw-300">
-                                        <div class="sing_folio_anim"><img src="images/folio/11.png"></div>
-                                        Github
+                                    <a href="<?php echo $result['github_link']; ?>" 
+                                        class="col-6 shadow proj_nav text-center navig1 p-3 text-white fw-300" target="_blank">
+                                        <?php 
+                                            if(empty($result['github_link'])){
+                                                echo 'Indisponible';
+                                            }else{
+                                                echo 'Github';
+                                                echo '<div class="sing_folio_anim"><img src="images/folio/github-icon.png"></div>';
+                                            }
+                                        ?>
                                     </a>
 
                                     <a href="<?php echo $result['website_link']; ?>"
-                                        class="col-6 shadow proj_nav text-center navig2 p-3 text-white fw-300" >
-                                        <div class="sing_folio_anim"><img src="images/folio/11.png"></div>
-                                        Website
+                                        class="col-6 shadow proj_nav text-center navig2 p-3 text-white fw-300" target="_blank">
+                                        <?php 
+                                            if(empty($result['website_link'])){
+                                                echo 'Indisponible';
+                                            }else{
+                                                echo 'Website';
+                                                echo '<div class="sing_folio_anim"><img src="images/folio/website-icon.png"></div>';
+                                            }
+                                        ?>
                                     </a>
                                 </div>
                             </div>

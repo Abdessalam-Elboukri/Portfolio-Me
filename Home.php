@@ -1,7 +1,12 @@
+<?php
+    include 'sql/config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" type="x-icon" href="images/author/logopng.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +28,7 @@
                 <div class="col-lg-8 col-md-7 rounded-3" >
                     <!-- navbar -->
                 <?php include 'includes/navbar.php'; ?>
+                
                     <div class="container-fluid content-mod ">
                         <div class="row ">
                             <div class="pd-content div_rel">
@@ -31,11 +37,16 @@
                                     <h4>About Info</h4>
                                 </div>
                                 <div class="row mt-3">
+                                <?php
+                                        $sql= "SELECT * FROM info_personal";
+                                        $query= Mysqli_query($conn, $sql);
+                                        while($result = Mysqli_fetch_array($query)){
+                                    ?>
                                     <div class=" col-lg-6 col-12">
                                         <div class="box">
                                             <i class="bi bi-person-check-fill"></i>
                                             <span>Full Name</span>
-                                            <p>Abdessalam Elboukri</p>
+                                            <p><?php echo $result['full_name']  ?></p>
                                         </div>
                                     </div>
                                     <!--  -->
@@ -43,7 +54,7 @@
                                         <div class="box">
                                             <i class="bi bi-envelope-check"></i>
                                             <span>Email</span>
-                                            <p style="word-wrap:wrap;">AbdessalamElboukri1 @gmail.com</p>
+                                            <p><?php echo $result['email']  ?></p>
                                         </div>
                                     </div>
                                     <!--  -->
@@ -51,7 +62,7 @@
                                         <div class="box">
                                             <i class="bi bi-calendar2-date-fill"></i>
                                             <span>Age</span>
-                                            <p>23 years and 22day</p>
+                                            <p><?php echo $result['age']  ?></p>
                                         </div>
                                     </div>
                                     <!--  -->
@@ -59,7 +70,7 @@
                                         <div class="box">
                                             <i class="bi bi-telephone"></i>
                                             <span>Phone Number</span>
-                                            <p>+212 623872382</p>
+                                            <p><?php echo $result['phone']  ?></p>
                                         </div>
                                     </div>
                                     <!--  -->
@@ -67,9 +78,12 @@
                                         <div class="box">
                                             <i class="bi bi-building"></i>
                                             <span>Address</span>
-                                            <p>47 bloc 01 loi 01 zaitoun , Khouribga </p>
+                                            <p><?php echo $result['address']  ?></p>
                                         </div>
                                     </div>
+                                    <?php
+                                        }
+                                    ?>
                                 </div>
                             </div>
                             <!--  -->
