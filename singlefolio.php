@@ -6,6 +6,10 @@
     $sql = "SELECT * FROM projects WHERE id=$id ";
     $query= Mysqli_query($conn, $sql);
     $result = Mysqli_fetch_array($query);
+
+    $sql1 = "SELECT * FROM projects_images WHERE id=$id ";
+    $query1= Mysqli_query($conn, $sql1);
+    $result1 = Mysqli_fetch_array($query1);
                                     
 ?>
 <!DOCTYPE html>
@@ -33,11 +37,11 @@
                 <div class="col-lg-8 col-md-7">
                     <!-- navbar -->
                 <?php include 'includes/navbar.php'; ?>
-                    <div class="container-fluid content-mod">
-                        <div class="pt-2">
+                    <div class="container-fluid content-mod rounded" >
+                        <div class="pt-3 ">
                             <div class="row justify-content-center">
                                 <div class="col-12" >
-                                    <img src="./images/folio/eclass-course.jpeg" width="100%">
+                                    <img src="<?php echo 'images/project_imgs/'.$result1['image1']; ?>" width="100%">
                                 </div>
                                 <div class="container-fluid row mt-2 justify-content-center">
                                     <a href="<?php echo $result['github_link']; ?>" 

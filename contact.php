@@ -1,3 +1,4 @@
+<?php include 'signin_modal.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +60,7 @@
                                         </div>
                                     </div>
                                     <!--  -->
-                                    <?php include 'signin_modal.php'; ?>
+                                    
                                     <!--  -->
                                     <div class=" col-lg-6 col-12">
                                         <div class="box">
@@ -77,6 +78,7 @@
                                     </div>
                                 </div>
                                 <?php  include 'includes/footer.php';  ?>
+                            </div>
                             </div>
 </body>
 </html>

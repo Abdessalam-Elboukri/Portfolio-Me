@@ -19,7 +19,9 @@ html{
 }
 ::-webkit-scrollbar{
     width: 10px;
+    height: 15px;
 }
+
 ::-webkit-scrollbar-thumb{
     border-radius: 10px;
     background:linear-gradient(to bottom, var(--purple1) 70%, rgb(199, 117, 253));

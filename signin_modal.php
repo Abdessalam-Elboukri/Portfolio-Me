@@ -85,14 +85,10 @@
                 <button type="button" class="btn btn-primary"><a href="signin.php">LogIn</a></button>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div> <!-- </div> -->
-    </div>
+    </div>  
 </section>
 
-<section class=" d-flex justify-content-center align-items-center dark vh-100 vw-100">
+<!-- <section class=" d-flex justify-content-center align-items-center dark vh-100 vw-100">
     <div class=" col-lg-4 col-sm-8 col-md-6 ">
         <div class="bg-light p-4 shadow signin" style=" border-radius: 20px;">
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -144,4 +140,4 @@
     </div>
     </div>
     </div>
-</section>
+</section> -->
