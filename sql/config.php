@@ -1,10 +1,10 @@
 <?php
     $servername = "localhost";
-    $userrname = "root";
-    $spassword = "";
+    $username = "root";
+    $password = "";
     $database = "portfolio";
 
-    $conn = new mysqli($servername, $userrname, $spassword, $database );
+    $conn = new mysqli($servername, $username, $password, $database );
 
     if($conn->connect_error){
         die("connection failed" .$conn->connect_error);
