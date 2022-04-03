@@ -3,7 +3,6 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="shortcut icon" type="x-icon" href="images/author/logopng.png">
     <meta charset="UTF-8">
