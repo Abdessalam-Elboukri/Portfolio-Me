@@ -1,6 +1,7 @@
 <?php
     include 'sql/config.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +38,7 @@
                                         $query= Mysqli_query($conn, $sql);
                                         while($result = Mysqli_fetch_array($query)){
                                     ?>
+                                    
                                     <div class="col-lg-6 folio_effect" style="display: inline-block;  opacity: 1;">
                                         <div class="folio_item">
                                             <a href="singlefolio.php?id=<?php echo $result['id']; ?>" class="folio_item_thumbs">
@@ -64,7 +66,7 @@
                             <div class="col-12 project-notif mt-2 mb-3 d-flex justify-content-center">
                                 <div class=" col-md-4  text-center">
                                     <div class="animation_prj"></div>
-                                    <span class="text-white small fw-500"> More Projects are Soon</span>
+                                    <span class="text-white small fw-500"> More Projects Soon</span>
                                 </div>                                
                             </div>
                         <!--  -->
