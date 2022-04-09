@@ -26,6 +26,7 @@
             <h5>Back-end Developement: <br><span class="back-end"></span></h5>
             <h5>Tools : <br><span class="tools"></span></h5>
         </div>
+<!--              -->
             <!-- <div>
                 <div class="col-12 lang_op">
                     <span>HTML</span> <span>CSS</span>
@@ -37,6 +38,7 @@
                 </div>
                 <div class="hide_item"> </div>
             </div> -->
+<!--              -->
             <div class="d-flex btns-info mt-3">
                 <button class="btn border-1 col-2 "><a href="#" class="text-white"><i class="bi bi-cloud-arrow-down-fill fs-5"></i></a></button>
                 <button class="btn border-1 col-8"><a href="#" class="text-white"><i class="bi bi-gem me-2"></i>Contact me</a></button>
