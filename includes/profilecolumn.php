@@ -53,7 +53,6 @@
             backDelay: 900,
             loop : true ,
         })
-
         var typed = new Typed(".back-end" ,{
             strings:["Php" , "MySQL" , "SQL" , "OOP"],
             typeSpeed : 100,
@@ -61,7 +60,6 @@
             backDelay: 900,
             loop : true ,
         })
-
         var typed = new Typed(".tools" ,{
             strings:["Git" , "VsCode" , "Github-Flow" , "Adobe Xd" , "Trello"],
             typeSpeed : 100,
