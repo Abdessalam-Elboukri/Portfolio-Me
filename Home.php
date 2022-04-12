@@ -188,7 +188,7 @@
                                     <!--  -->
                                     <div class="col-lg-7">
                                         <div class="languageDiv">
-                                            <div class="title mb-md-5">
+                                            <div class="title  mb-md-5  ">
                                                 <h4>Langues</h4>
                                             </div>
                                             <div class="mt-3">
