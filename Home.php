@@ -107,7 +107,6 @@
                                 </div>
                             </div>
                             <!--  -->
-                            
                             <div class="pd-content">
                                 <div class="title">
                                     <h4>My Skills</h4>
