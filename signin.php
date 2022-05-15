@@ -13,16 +13,6 @@
         if (isset($_POST['login_user'])) {
         $email = mysqli_real_escape_string($conn, $_POST['email']);
         $password = mysqli_real_escape_string($conn,$_POST['password']);
-// -------------
-        // $email = test_input($_POST["email"]);
-        // $password = test_input($_POST["password"]);
-
-        // function test_input($data) {
-        // $data = trim($data);
-        // $data = stripslashes($data);
-        // $data = htmlspecialchars($data);
-        // return $data;
-        // }
 
 // -------------  
         if (empty($email)) {
