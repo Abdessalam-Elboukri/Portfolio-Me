@@ -9,10 +9,7 @@
 
     $sql1 = "SELECT * FROM projects_images WHERE id=$id ";
     $query1= Mysqli_query($conn, $sql1);
-    $result1 = Mysqli_fetch_array($query1);
-                                    
-
-
+    $result1 = Mysqli_fetch_array($query1);   
 ?>
 <!DOCTYPE html>
 <html lang="en">
