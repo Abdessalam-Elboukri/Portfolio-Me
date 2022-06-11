@@ -11,6 +11,8 @@
     $query1= Mysqli_query($conn, $sql1);
     $result1 = Mysqli_fetch_array($query1);
                                     
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
